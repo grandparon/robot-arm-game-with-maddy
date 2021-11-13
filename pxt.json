@@ -4,7 +4,8 @@
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "microphone": "*"
+        "microphone": "*",
+        "ServoBit": "github:4tronix/servobit#0.2.1"
     },
     "files": [
         "main.blocks",
