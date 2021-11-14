@@ -1,6 +1,3 @@
-/**
- * Example is the servo that rotates the arm has a variable called rotate-servo-num. It has the value 0. So the rotate servo needs to be plugged into the "0" pins on the motor board.
- */
 // plus is  1
 // minus is 0
 function read_actual_position (plus_or_minus: number, num: number) {
@@ -95,7 +92,7 @@ ServoBit.centreServos()
 let ClawOpen = 5
 let ClawClose = 2
 let ROTATE_CW = 1
-let RotCCW = 4
+let Rotate_CCW = 4
 let armup = 6
 let armdown = 3
 let armin = 7
@@ -107,7 +104,7 @@ basic.forever(function () {
     while (read_keyboard() == ROTATE_CW) {
         MoveServo(RotateNum, ServoBit.getServoActual(RotateNum) - 5, speed_1)
     }
-    while (read_keyboard() == RotCCW) {
+    while (read_keyboard() == Rotate_CCW) {
         MoveServo(RotateNum, ServoBit.getServoActual(RotateNum) + 5, speed_1)
     }
     while (read_keyboard() == armdown) {
