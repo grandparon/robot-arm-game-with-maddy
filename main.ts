@@ -1,12 +1,6 @@
 /**
  * Example is the servo that rotates the arm has a variable called rotate-servo-num. It has the value 0. So the rotate servo needs to be plugged into the "0" pins on the motor board.
  */
-// the numbers on the right side of each of these needs to be the same as the slot or connector number on the micro-bit motor board.
-input.onButtonPressed(Button.A, function () {
-    while (!(input.buttonIsPressed(Button.B))) {
-        Check_Keyboard(1)
-    }
-})
 // plus is  1
 // minus is 0
 function read_actual_position (plus_or_minus: number, num: number) {
